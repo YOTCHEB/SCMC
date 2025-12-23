@@ -89,45 +89,7 @@ pip install -r requirements.txt
 python -m uvicorn main_api.main:app --reload
 ```
 
-### AG Component
 
-1. Navigate to the AG directory:
-```bash
-cd AG
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-## Usage
-
-1. Start the backend server
-2. Start the UI development server
-3. Access the application through your web browser
-4. Use the AG component for agricultural-specific features
-
-## Database
-
-The application uses SQLite with a database file named `user_progress.db` for tracking user progress and related data.
-
-## Configuration
-
-- Backend configuration is typically handled through the `.env` file in the backend2 directory
-- UI configuration can be managed through environment variables or configuration files
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-[Specify your license here - e.g., MIT, Apache 2.0, etc.]
 
 ## Contact
 
