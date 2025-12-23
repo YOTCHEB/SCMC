@@ -2,16 +2,16 @@
 
 ## Overview
 
-The SCMC (Supply Chain Management and Communication) Project is a comprehensive application designed to manage and track progress across multiple components. The project includes a modern React-based frontend, a Python backend API, and specialized modules for various functionalities including agricultural linkages in Malawi (AG component).
+The SCMC (Student Career Mentor ChatBot) Project is a comprehensive career guidance application designed to assist students in their career development journey. The project includes a modern React-based frontend, a Python backend API, and specialized modules for various functionalities including agricultural linkages in Malawi (AG component).
 
 ## Project Structure
 
 ```
 SCMC-Project/
-├── UI/                   # React/TypeScript frontend
-├── backend2/             # Python backend API
-├── AG/                   # Agricultural linkages component (agrolink-malawi)
-├── uploads/              # Upload directory for file handling
+├── UI/                   # React/TypeScript frontend for the chatbot interface
+├── backend2/             # Python backend API for chatbot logic
+├── AG/                   # Agricultural Guidance component (agrolink-malawi)
+├── uploads/              # Upload directory for document handling
 ├── user_progress.db      # SQLite database for user progress tracking
 └── README.md             # This file
 ```
@@ -21,25 +21,27 @@ SCMC-Project/
 - Styled using Tailwind CSS
 - Includes routing with React Router
 - Uses various UI libraries including Heroicons and Lucide React
-- Built as a modern, responsive web application
+- Provides an intuitive interface for the career mentor chatbot
 
 ### Backend (API)
 - Python-based backend using FastAPI or similar framework
-- Contains API endpoints for knowledge testing and communication
-- Includes progress tracking functionality
-- Uses SQLite database for storing user progress
+- Contains API endpoints for chatbot interactions and career guidance
+- Includes progress tracking functionality for career development
+- Uses SQLite database for storing user progress and interactions
 
-### AG Component
-- Specialized module for agricultural linkages in Malawi
+### AG Component (Agricultural Guidance)
+- Specialized module for agricultural career guidance in Malawi
 - Built with React and Material UI icons
-- Contains specific functionality for agricultural supply chains
+- Contains specific functionality for agricultural career pathways and opportunities
 
 ## Features
 
-- **Progress Tracking**: Built-in progress tracking for users
-- **Knowledge Testing**: Endpoints for knowledge assessment
+- **Career Guidance**: Personalized career advice and recommendations
+- **Progress Tracking**: Built-in progress tracking for career development
+- **Knowledge Testing**: Assessments to help students understand career paths
+- **Interactive Chatbot**: Conversational interface for mentorship
 - **Responsive UI**: Modern, responsive user interface
-- **File Uploads**: Support for file handling and uploads
+- **File Uploads**: Support for resume and document uploads
 - **Multi-component Architecture**: Modular design for scalability
 
 ## Prerequisites
