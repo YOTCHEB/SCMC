@@ -2,7 +2,7 @@
 
 ## Overview
 
-The SCMC (Student Career Mentor ChatBot) Project is a comprehensive career guidance application designed to assist students in their career development journey. The project includes a modern React-based frontend, a Python backend API, and specialized modules for various functionalities including agricultural linkages in Malawi (AG component).
+The SCMC (Student Career Mentor ChatBot) Project is a comprehensive career guidance application designed to assist students in their career development journey. The project includes a modern React-based frontend, a Python backend API, and various specialized modules for career guidance functionalities.
 
 ## Project Structure
 
@@ -10,7 +10,6 @@ The SCMC (Student Career Mentor ChatBot) Project is a comprehensive career guida
 SCMC-Project/
 ├── UI/                   # React/TypeScript frontend for the chatbot interface
 ├── backend2/             # Python backend API for chatbot logic
-├── AG/                   # Agricultural Guidance component (agrolink-malawi)
 ├── uploads/              # Upload directory for document handling
 ├── user_progress.db      # SQLite database for user progress tracking
 └── README.md             # This file
@@ -29,10 +28,6 @@ SCMC-Project/
 - Includes progress tracking functionality for career development
 - Uses SQLite database for storing user progress and interactions
 
-### AG Component (Agricultural Guidance)
-- Specialized module for agricultural career guidance in Malawi
-- Built with React and Material UI icons
-- Contains specific functionality for agricultural career pathways and opportunities
 
 ## Features
 

@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Form Styles */
+@layer components {
+  .form-group {
+    @apply space-y-2;
+  }
+  
+  .form-label {
+    @apply flex items-center space-x-2 text-sm font-semibold text-gray-700;
+  }
+  
+  .form-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white/70 backdrop-blur-sm;
+  }
+  
+  .form-error {
+    @apply text-red-500 text-sm mt-1;
+  }
+  
+  .template-card {
+    @apply p-6 rounded-xl border-2 cursor-pointer transition-all duration-300 text-center hover:shadow-lg transform hover:scale-105;
+  }
+  
+  .template-card-default {
+    @apply border-gray-200 bg-white/70 backdrop-blur-sm hover:border-blue-300;
+  }
+  
+  .template-card-selected {
+    @apply border-blue-500 bg-blue-50 shadow-lg scale-105;
+  }
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.3s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .template-card {
+    @apply p-4 text-sm;
+  }
+  
+  .form-input {
+    @apply py-2 px-3;
+  }
+}
+
+/* Glassmorphism Effects */
+.glass {
+  @apply bg-white/20 backdrop-blur-md border border-white/30;
+}
+
+.glass-dark {
+  @apply bg-gray-900/20 backdrop-blur-md border border-gray-700/30;
+}
+
+/* Chat Bubble Styles */
+.chat-bubble-user {
+  @apply bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-2xl rounded-br-md px-4 py-3 max-w-xs sm:max-w-sm md:max-w-md shadow-md;
+}
+
+.chat-bubble-ai {
+  @apply bg-white border border-gray-200 text-gray-800 rounded-2xl rounded-bl-md px-4 py-3 max-w-xs sm:max-w-sm md:max-w-md shadow-md;
+}
+
+/* Loading Animation */
+.typing-indicator {
+  @apply flex space-x-1 items-center;
+}
+
+.typing-dot {
+  @apply w-2 h-2 bg-gray-400 rounded-full animate-pulse;
+  animation-delay: 0ms;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 300ms;
+}
